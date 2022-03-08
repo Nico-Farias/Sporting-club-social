@@ -51,6 +51,9 @@
                         cursor: pointer;
                         color: black;
                         background-color: yellow;
+                        transition: .5s;
+                        border: 1px solid white;
+                        border-radius: 5px;
                     }
                     
                     @media (max-width:570px) {
@@ -181,6 +184,14 @@
                         border: 1px solid gray;
                     }
                     
+                    .main .noticias article:hover {
+                        transform: scale(1.1, 1.1);
+                        -ms-transform: scale(1.1, 1.1);
+                        -webkit-transform: scale(1.1, 1.1);
+                        -moz-transform: scale(1.1, 1.1);
+                        background-color: white;
+                    }
+                    
                     .main .noticias article p {
                         margin-top: 1rem;
                     }
@@ -196,7 +207,7 @@
                         margin-bottom: auto;
                     }
                     
-                    .socios a {
+                    .socios .btn-socios {
                         text-decoration: none;
                         font-size: 4rem;
                         font-family: 'Langosta', cursiva;
@@ -207,10 +218,11 @@
                         border-radius: 2rem;
                     }
                     
-                    .socios a:hover {
+                    .socios .btn-socios:hover {
                         cursor: pointer;
                         background-color: rgb(241, 241, 89);
                         color: black;
+                        transition: .5s;
                     }
                     
                     @media(max-width:570px) {
@@ -232,7 +244,7 @@
                         .socios {
                             padding: 2rem;
                         }
-                        .socios a {
+                        .socios .btn-socios {
                             text-decoration: none;
                             font-size: 2rem;
                             font-family: 'Langosta', cursiva;
